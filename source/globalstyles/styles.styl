@@ -3,9 +3,14 @@
 /*==========================================================
 Color Theme
 ==========================================================*/
-cd-foreground = white
+cd-foreground = black
 cd-flash = purple
-cd-background = black
+cd-background = white
+
+cd-ghana-red = #CF0921
+cd-ghana-yellow = #FCD20F
+cd-ghana-green = #006B3D
+
 
 /*==========================================================
 Global Variables
@@ -13,23 +18,59 @@ Global Variables
 // max-content-width = 900px
 // mobile-side-padding = 15px
 
+maxMobileWidth = 600px
+desktopscreen = 'screen and (min-width: %s)' % maxMobileWidth
+mobilescreen = 'screen and (max-width: %s)' % maxMobileWidth
+
+// desktopscreen = 'screen and (min-width: %s)' %  minDesktopWidth
 
 /*==========================================================
 General Tag Styles
 ==========================================================*/
+html
+    scroll-behavior: smooth
 body
-    background-color cd-background
-    color cd-foreground
+    color white
     font-family: Arial, Helvetica, sans-serif
-    text-align: center
     font-size: 12pt
-    height 100vh
     width 100%
-    overflow hidden
-
 h1
-    font-size: 17pt
+    font-size: 29pt
 h2
-    font-size: 15pt
+    font-size: 20pt
 p
-    font-size: 12pt
+    font-size: 14pt
+
+/*==========================================================
+Basic Font for different Sections
+==========================================================*/
+header
+    color white
+
+main
+    color black
+    h1
+    h2
+        font-weight: bold
+        color cd-ghana-green
+    h6
+        display none
+
+    h1
+        padding 30px 0
+    h2 
+        padding 30px 0
+    p
+        padding 20px 0
+        font-size: 14pt
+
+footer
+    color white
+    h1
+    h2
+        font-weight: bold
+        color cd-ghana-yellow
+
+
+#content
+    padding 150px 30px

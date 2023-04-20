@@ -1,0 +1,3 @@
+[submodule "ressources/mdcontent"]
+	path = ressources/mdcontent
+	url = git@github.com:JhonnyJason/annobil-leads-mdcontent.git
