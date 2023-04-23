@@ -18,7 +18,7 @@ Global Variables
 // max-content-width = 900px
 // mobile-side-padding = 15px
 
-maxMobileWidth = 600px
+maxMobileWidth = 740px
 desktopscreen = 'screen and (min-width: %s)' % maxMobileWidth
 mobilescreen = 'screen and (max-width: %s)' % maxMobileWidth
 
@@ -49,21 +49,37 @@ header
 
 main
     color black
-    h1
-    h2
-        font-weight: bold
-        color cd-ghana-green
     h6
         display none
 
     h1
-        padding 30px 0
+    h2
+        font-weight: bold
+        color cd-ghana-green
+
+    h1
+        margin auto
+        padding 100px 0 30px 0
+        max-width 900px
     h2 
+        margin auto
         padding 30px 0
+        max-width 900px
     p
+        margin auto
         padding 20px 0
         font-size: 14pt
+        letter-spacing: 0.5pt
+        line-height: 130%
 
+    img
+        display: block
+        margin auto
+        object-fit: cover
+        max-height 600px
+        width 100%
+        border-radius 5px
+        box-shadow: 0 0 5px alpha(#000, 0.2)
 footer
     color white
     h1
@@ -73,4 +89,6 @@ footer
 
 
 #content
-    padding 150px 30px
+    padding 50px 30px 150px 30px
+    max-width: 900px
+    margin auto
