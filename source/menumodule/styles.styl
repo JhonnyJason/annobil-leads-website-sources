@@ -22,11 +22,11 @@
     #home-link
         margin-right auto
         text-transform: uppercase
-    #project-link
-        vertical-align: center
-        svg
-            height 20px
-            width 20px
+    svg
+        position: relative
+        top 3px
+        height 20px
+        width 20px
 
 #menu-button
 #close-button
@@ -38,6 +38,7 @@
     height 30px
     color white
     svg
+        top 0
         width 30px
         height 30px
 
@@ -54,6 +55,10 @@
     #guide-link
         display: block
     #project-link
+        display: block
+    #arts-link
+        display: block
+    #donation-link
         display: block
 
     #header-navigation
@@ -72,10 +77,21 @@
         display block
         opacity: 0
         pointer-events: none
+    .nav-link
+        margin-left 30px
+        margin-right auto
+
+    #home-link
+        margin-left 0
+        // margin-right auto !important
 
     #blog-link
         display: none
     #guide-link
         display: none
     #project-link
+        display: none
+    #arts-link
+        display: none
+    #donation-link
         display: none
