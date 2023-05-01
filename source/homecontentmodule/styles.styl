@@ -5,8 +5,8 @@
 
 #about-us-section
     img
-        max-width 300px
-        max-height 300px
+        width 300px
+        height 300px
 
 #about-us-container
     display grid
@@ -60,8 +60,10 @@ a.page-link
 @media screen and (min-width: 400px)
     .container
         grid-template-columns: repeat( auto-fit, minmax(360px, 1fr) )
+
+@media screen and (min-width: 400px)
     #about-us-container
         grid-template-columns: auto auto
         
-        p 
-            width auto 
+        // p 
+        //     width auto 
