@@ -24,14 +24,13 @@ a.blog-link
 
     h2
         position absolute
-        top 50%
-        left 50%
-        transform translateX(-50%)
+        bottom 50px
+        left 0
         width 100%
+        box-sizing: border-box
         padding 30px
         background-color alpha(#000, 0.4)
         color #fff
-        box-sizing: border-box
 
     img
         aspect-ratio: 1
@@ -53,6 +52,9 @@ a.page-link
     box-shadow: 3px 3px 5px alpha(#000, 0.2)
     display: block
     margin 20px auto 50px auto
+
+a.page-link:hover
+    box-shadow: 3px 3px 5px alpha(#000, 0.4)
 
 
 @media screen and (min-width: 400px)
